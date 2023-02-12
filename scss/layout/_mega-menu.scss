@@ -9,19 +9,19 @@ nav.mega-menu {
         padding: 0;
         display: flex;
         align-items: center;
+        justify-content: center;
 
         li {
             list-style: none;
             position: relative;
             a {
                 font-size: 16px;
-                color: $white;
+                color: $black;
                 font-weight: 500;
                 text-transform: uppercase;
-                padding: 14px 17px 22px;
+                padding: 14px 17px 14px;
                 display: block;
                 position: relative;
-                border-radius: 5px 5px 0 0;
                 text-align: center;
 
                 span {
@@ -53,13 +53,13 @@ nav.mega-menu {
 
             &.current-page { 
                 a {
-                    color: $secondary;
+                    color: $black; border-bottom: 2px solid $black;
                 }
             }
 
             &:hover {
                 a {
-                    color: $secondary;
+                    background: $black; color: $white;
                 }
             }
 
@@ -78,7 +78,7 @@ nav.mega-menu {
                 opacity: 0;
                 visibility: hidden;
                 position: absolute;
-                top: 58px;
+                top: 52px;
                 left: 0;
                 border-radius: 0 5px 5px 5px;
                 background: $primary;
@@ -133,7 +133,10 @@ nav.mega-menu {
                         li {
                             text-align: left;
                             width: auto;
-                            margin-bottom: 15px;
+                            padding: 15px 0;
+                            border-bottom: 1px solid $secondary;
+
+                            &:last-child{border-bottom: none;}
 
                             a {
                                 display: flex;

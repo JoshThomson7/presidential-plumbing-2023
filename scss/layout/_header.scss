@@ -17,17 +17,27 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
 
         @include breakpoint(brotherbear) { padding: 5px 0;}
 
-        .max__width { width: 100%; display: flex; justify-content: space-between; align-items: center;}
+        .max__width { width: 100%; display: flex; justify-content: flex-start; align-items: center;}
 
         .header__main--left { display: flex; align-items: center;
             @include breakpoint(teenbear) { flex: 2; }
 
-            .logo { width: 290px; transition: all .4s ease; margin-right: 20px;
-                @include breakpoint(brotherbear) { margin: 0; width: 260px;}
+            .logo { width: 150px; transition: all .4s ease; margin-right: 20px;
+                @include breakpoint(brotherbear) { margin: 0; width: 120px;}
                 a { display: block; 
                     svg { 
                         .st0 { fill: #fff;}
                     }
+                }
+            }
+
+            .title{
+                h3{font-size: 34px; 
+                    @include breakpoint(brotherbear) { padding-left: 20px; font-size: 24px; text-align: center;}
+                }
+
+                p{font-size: 22px;
+                    @include breakpoint(brotherbear) { padding-left: 20px; font-size: 18px; text-align: center;}
                 }
             }
 
@@ -50,31 +60,59 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
             @include breakpoint(papabear) { display: block; }
 
             i { font-size: 40px; color: $white;
-                @include breakpoint(teenbear) { font-size: 24px; }
+                @include breakpoint(teenbear) { font-size: 28px; }
             } 
         }
     }
 
     .pre-header{
-        background: $primary;
+        background: $secondary; padding: 5px 0;
         .max__width{
             display: flex; justify-content: space-between; border-bottom: 1px solid rgba($white, 0.3);
 
-            .contact{display: flex; align-items: center; padding: 15px 0;
-                @include breakpoint(papabear) { display: none; }
+            .contact-container{display: flex;
+                .contact{display: flex; align-items: center; padding: 10px 0; margin-right: 30px;
+                    @include breakpoint(papabear) { display: none; }
+        
+                    a{padding-left: 5px; color: $black; font-size: 18px;
+                        &:hover{color: lighten($black, 10%);}
+                    }
     
-                a{padding-left: 20px; color: $white;
-                    &:hover{color: lighten($secondary, 10%);}
+                    i{color: $black;}
                 }
-
-                i{color: $white;}
             }
+
+            .social{
+                display: flex; align-items: center;
+                a{ background: $black; border-radius: 50%;
+                    i{ padding: 10px; color: $white; font-size: 24px; transition: .5s ease all; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                        -webkit-background-clip: text;
+                        /* Also define standard property for compatibility */
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    &:hover{background: $white;}
+                }
+            }
+        }
+    }
+
+    .post-header{
+        background: $secondary;
+
+        .burger__menu { display: none;
+            @include breakpoint(papabear) { display: flex; padding: 10px 0;}
+
+            i { font-size: 40px; color: $black; margin: 0 auto;
+                @include breakpoint(teenbear) { font-size: 24px; }
+            } 
         }
     }
 
     &.sticky,
     &.not-sticky { transition: all .3s ease;
-        .logo { width: 185px; transition: all .3s ease; }
+        .logo { width: 120px; transition: all .3s ease; }
     }
 
     &.sticky { top: 0; background: rgba($tertiary, 0.9);}
@@ -89,7 +127,7 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
     &.not-sticky { top: -150px; }
 
     &.reset {
-        .logo { width: 185px; transition: all .3s ease;
+        .logo { width: 120px; transition: all .3s ease;
             @include breakpoint(papabear) { width: 70px; }
         }
     }

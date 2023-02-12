@@ -16,7 +16,7 @@
             @include breakpoint(mamabear) { text-align: center; margin-bottom: 20px; width: 100%;}
 
             h2 { font-size: 40px; color: #fff; margin: 0;}
-            p { font-size: 18px; padding-top: 20px; margin: 0; color: #fff;}
+            p { font-size: 20px; padding-top: 20px; margin: 0; color: #fff;}
         }
 
         a { display: block; padding: 18px 40px 16px; background: $secondary; color: $primary; font-size: 14px; font-weight: 700; text-transform: uppercase; position: relative; z-index: 2; border: none; align-self: center; font-family: $primaryFont;

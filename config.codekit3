@@ -427,15 +427,18 @@
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
-    "\/img\/fl1-icon.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/img\/fl1-icon.svg",
+    "\/img\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 97448,
+      "oA" : 0,
+      "oAP" : "\/img\/logo.png",
       "oF" : 0,
+      "oIPL" : 0,
       "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/img\/select-arrow-down-white.png" : {
       "ft" : 32768,
@@ -455,19 +458,6 @@
       "iS" : 1617,
       "oA" : 0,
       "oAP" : "\/img\/select-arrow-down.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/white-logo.png" : {
-      "ft" : 32768,
-      "iS" : 7614,
-      "oA" : 0,
-      "oAP" : "\/img\/white-logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3028,7 +3018,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 652874357.77309203,
-    "displayValue" : "igm-leak-detection-2023",
+    "displayValue" : "presidential-plumbing-2023",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-koamaru",
     "iconImageWasSetByUser" : 0

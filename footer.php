@@ -3,6 +3,7 @@
             
         <div class="footer__menus">
             <div class="max__width">
+
                 <?php
                     while(have_rows('footer_menus', 'options')) : the_row();
 
@@ -17,6 +18,12 @@
 
                 <?php endwhile; ?>
 
+                <article>
+                    <a href="<?php echo esc_url(home_url()); ?>" title="<?php bloginfo('name'); ?>">
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/logo.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
+                    </a>
+                </article>
+
             </div>
 
         </div><!-- footer__menus -->
@@ -29,7 +36,7 @@
                 </div><!-- subfooter--left -->
 
                 <div class="subfooter--right">
-                    <small><a href="http://www.fl1.digital" target="_blank">Powered by FL1 Digital</a></small>
+                    <small><a href="https://thomson-website-solutions.com" target="_blank">Website created by TWS</a></small>
                 </div><!-- subfooter--left -->
 
             </div><!-- max__width -->

@@ -41,11 +41,6 @@ if(!empty($banners)):
                     <div class="avb-banner__caption">
                         <div class="max__width">
                             <div class="avb-banner__caption-wrap">
-                                <?php if($country): ?>
-                                    <figure class="flag">
-                                        <img src="<?php echo ATM_URL.'assets/img/countries/'.$country.'.svg'; ?>" alt="<?php echo $banner->heading(false); ?>">
-                                    </figure>
-                                <?php endif; ?>
                                 <?php if($banner->headingTop()): ?><?php echo $banner->headingTop(); ?><?php endif; ?>
                                 <?php if($banner->heading()): ?><?php echo $banner->heading(); ?><?php endif; ?>
                                 <?php if($banner->caption()): ?><p><?php echo $banner->caption(); ?></p><?php endif; ?>

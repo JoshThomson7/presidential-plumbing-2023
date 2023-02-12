@@ -46,6 +46,8 @@ footer { position: relative; background: $primary; background-repeat: no-repeat;
                 }
             }
 
+            img{max-width: 170px; margin: 0 auto;}
+
             ul { margin: 0; padding: 0;
                 @include breakpoint(papabear) { font-size: 16px; padding-bottom: 20px; }
 
