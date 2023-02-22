@@ -427,6 +427,19 @@
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
+    "\/img\/google-reviews.png" : {
+      "ft" : 32768,
+      "iS" : 25750,
+      "oA" : 0,
+      "oAP" : "\/img\/google-reviews.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/logo.png" : {
       "ft" : 32768,
       "iS" : 97448,
@@ -458,6 +471,19 @@
       "iS" : 1617,
       "oA" : 0,
       "oAP" : "\/img\/select-arrow-down.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/trust-pillot.png" : {
+      "ft" : 32768,
+      "iS" : 24655,
+      "oA" : 0,
+      "oAP" : "\/img\/trust-pillot.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

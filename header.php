@@ -60,7 +60,13 @@
                     </div><!-- left -->
 
                     <div class="header__main--right">
+                        <a href="#" title="Google Reviews">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/google-reviews.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
+                        </a>
 
+                        <a href="#" title="Trust Pilot">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/trust-pillot.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
+                        </a>
                     </div><!-- right -->
 
                 </div><!-- max__width -->

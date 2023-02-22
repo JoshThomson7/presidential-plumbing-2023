@@ -96,10 +96,11 @@ jQuery(document).ready(function($){
 
     $('.grid-boxes-carousel').slick({
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 300,
+        autoplay: true,
         slidesToShow: 3,
-        arrows: false,
+        arrows: false, 
         rows: 0,
         responsive : [
             {

@@ -17,7 +17,7 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
 
         @include breakpoint(brotherbear) { padding: 5px 0;}
 
-        .max__width { width: 100%; display: flex; justify-content: flex-start; align-items: center;}
+        .max__width { width: 100%; display: flex; justify-content: space-between; align-items: center;}
 
         .header__main--left { display: flex; align-items: center;
             @include breakpoint(teenbear) { flex: 2; }
@@ -54,6 +54,16 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
                 }
             }
 
+            a{
+                img{
+                    max-width: 110px;
+                }
+
+                &:first-child{
+                    img{margin-bottom: 10px;}
+                }
+            }
+
         }
 
         .burger__menu { display: none; margin-right: 5px;
@@ -83,7 +93,7 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
             }
 
             .social{
-                display: flex; align-items: center;
+                display: flex; align-items: center; margin-right: 35px;
                 a{ background: $black; border-radius: 50%;
                     i{ padding: 10px; color: $white; font-size: 24px; transition: .5s ease all; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
                         -webkit-background-clip: text;
