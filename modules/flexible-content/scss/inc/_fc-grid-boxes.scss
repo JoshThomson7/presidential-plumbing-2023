@@ -4,7 +4,7 @@
 
 .fc_grid_boxes {
 
-    .grid__boxes__wrapper { display: flex; flex-wrap: wrap; justify-content: center;
+    .grid__boxes__wrapper, .smooth-scroll { display: flex; flex-wrap: wrap; justify-content: center;
         article { display: flex; position: relative; overflow: hidden; min-width: 300px; 
             @include breakpoint(mamabear){
                 width: 100%!important;

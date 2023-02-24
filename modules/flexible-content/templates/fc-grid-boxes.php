@@ -7,10 +7,14 @@ $grid_box_num = get_sub_field('grid_boxes_num');
 $grid_box_img_align = ' '.get_sub_field('grid_box_image_alignment');
 $grid_box_spacing = get_sub_field('grid_box_spacing') ? ' style="border: '.get_sub_field('grid_box_spacing').'px transparent solid;"' : '';
 $grid_box_spacing_fix = get_sub_field('grid_box_spacing') ? ' style="margin: 0 -'.get_sub_field('grid_box_spacing').'px;"' : '';
-
 $grid_boxes_carousel = get_sub_field('grid_boxes_carousel');
+
+$grid_boxes_smooth_sliding = 'grid-boxes-carousel ';
+if(get_sub_field('grid_boxes_smooth_sliding')){
+    $grid_boxes_smooth_sliding = 'smooth-scroll '; 
+}
 ?>
-<div class="grid__boxes__wrapper<?php echo $grid_boxes_carousel ? ' grid-boxes-carousel' : ''; ?>"<?php echo $grid_box_spacing_fix; ?>>
+<div class="<?php echo $grid_boxes_smooth_sliding; ?>grid__boxes__wrapper"<?php echo $grid_box_spacing_fix; ?>>
     <?php
         while(have_rows('grid_boxes')) : the_row();
 

@@ -1,3 +1,6 @@
+    <div class="insta" style="padding-bottom: 20px;">
+        <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+    </div>
 
     <footer role="contentinfo">
             

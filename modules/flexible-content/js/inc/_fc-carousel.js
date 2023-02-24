@@ -120,6 +120,34 @@ jQuery(document).ready(function($){
         ]
     });
 
+    $('.smooth-scroll').slick({
+        dots: true,
+        infinite: true,
+        autoplaySpeed: 0,
+        cssEase: 'linear',          
+        speed: 20000, 
+        autoplay: true,
+        slidesToShow: 3,
+        arrows: false, 
+        rows: 0,
+        responsive : [
+            {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
     $('.fc-layout-carousel').slick({
         dots: true,
         infinite: false,
