@@ -43,3 +43,7 @@ if(!$text_align) {
         </article>
     <?php endwhile; ?>
 </div><!-- fc_icon_grid_wrapper -->
+
+<?php if|(is_front_page()):?>
+    <a href="#" class="button primary">Find Out More</a>    
+<?php endif; ?>

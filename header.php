@@ -37,7 +37,10 @@
                     </div>
 
                     <div class="social">
-                        <a href="https://www.instagram.com/presidentialplumbingltd/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/presidentialplumbingltd/" target="_blank" class="insta"><i class="fab fa-instagram"></i></a>
+                        <a href="https://m.facebook.com/100089734701459/" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/presidential-plumbing-7813232b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="www.tiktok.com/@presidentialplumbing" target="_blank"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
             </div>
@@ -78,9 +81,12 @@
                         <?php include get_stylesheet_directory().'/modules/mega-menu.php'; ?>
                     </nav><!-- header__nav -->
 
+                    <a href="https://presidentialplumbing.co.uk/" class="mobile">Home</a>
+
                     <a href="#nav_mobile" class="burger__menu">
                         <i class="fal fa-bars"></i>
                     </a>
+
                 </div>
             </div>
 		</header><!-- header -->

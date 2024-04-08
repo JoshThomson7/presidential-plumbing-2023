@@ -9,7 +9,7 @@ $bk_img = '';
 if($cta_bk) {
     $attachment_id = get_sub_field('cta_bk');
     $bk_img = vt_resize($attachment_id, '', 2000, 600, true);
-    $bk_img = ' style="background-image:url('.$bk_img['url'].');"';
+    $bk_img = ' style="background-size: cover; background-image:url('.$bk_img['url'].');"';
 }
 
 $scroll = '';

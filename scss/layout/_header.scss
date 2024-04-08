@@ -98,18 +98,28 @@ header.header { width: 100%; transition: all .4s ease; width: 100%; top: 0; left
             }
 
             .social{
-                display: flex; align-items: center; margin-right: 35px;
+                display: flex; align-items: center;
                 @include breakpoint(papabear) { margin-right: 0; }
                 
-                a{ background: $black; border-radius: 50%;
-                    i{ padding: 10px; color: $white; font-size: 24px; transition: .5s ease all; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-                        -webkit-background-clip: text;
-                        /* Also define standard property for compatibility */
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
+                a{ background: $black; border-radius: 50%; margin-left: 5px;
+                    i{ padding: 10px; color: $white; font-size: 24px; transition: .5s ease all;}
+
+                    &:hover{background: $white; 
+                        i{color: black;}
                     }
 
-                    &:hover{background: $white;}
+                    &.insta{
+                        i{ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
+                    }
+
+                    &.facebook{
+                        i{background: #2B66FF; border-radius: 50%;}
+                    }
+
+                    &.linkedin{
+                        i{background: #2466C2; border-radius: 50%;}
+                    }
+
                 }
             }
         }
@@ -122,6 +132,22 @@ header.header { width: 100%; transition: all .4s ease; width: 100%; top: 0; left
             @include breakpoint(papabear) { display: flex; padding: 10px 0;}
 
             i { font-size: 40px; color: $black; margin: 0 auto;} 
+        }
+
+        .max__width{
+            @include breakpoint(papabear) {
+                display: flex; align-items: center; justify-content: space-between;
+            }
+        }
+
+        .header__nav{
+            @include breakpoint(papabear) {
+                display: none;
+            }
+        }
+
+        .mobile{display: none; color: black; font-size: 22px;
+            @include breakpoint(papabear) { display: block; }
         }
     }
 
