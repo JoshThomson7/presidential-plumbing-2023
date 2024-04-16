@@ -125,7 +125,7 @@ jQuery(document).ready(function($){
         infinite: true,
         autoplaySpeed: 0,
         cssEase: 'linear',          
-        speed: 10000, 
+        speed: 5000, 
         autoplay: true,
         slidesToShow: 3,
         arrows: false, 

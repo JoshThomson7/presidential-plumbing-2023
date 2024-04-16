@@ -81,10 +81,20 @@
                         <?php include get_stylesheet_directory().'/modules/mega-menu.php'; ?>
                     </nav><!-- header__nav -->
 
-                    <a href="https://presidentialplumbing.co.uk/" class="mobile">Home</a>
+                    <a href="https://www.google.com/search?q=presidential+plumbing+potters+bar&oq=presidential+&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MgYIAhBFGDsyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg8qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x34b8755c4a51f89:0xd9d1367444c84555,1,,,," class="mobile" title="Google Reviews">
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/google-reviews.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
+                    </a>
 
-                    <a href="#nav_mobile" class="burger__menu">
-                        <i class="fal fa-bars"></i>
+                    <div class="mobile-centre">
+                        <a href="#nav_mobile" class="burger__menu">
+                            <i class="fal fa-bars"></i>
+                        </a>
+
+                        <a href="https://presidentialplumbing.co.uk/" class="mobile">Home</a>
+                    </div>
+
+                    <a href="https://uk.trustpilot.com/review/presidentialplumbing.co.uk" class="mobile" title="Trust Pilot">
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/trust-pillot.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
                     </a>
 
                 </div>
